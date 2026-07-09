@@ -3,7 +3,10 @@
 using namespace std;
 
 // This Question can be solved by All 3 sorting Algorthims too.
+// O(n^2)
 
+
+// O(n)
 void SortColor(vector<int> &nums){
 
     int n = nums.size();
@@ -29,6 +32,29 @@ void SortColor(vector<int> &nums){
         nums[idx++] = 2;
     }    
 }
+
+
+// O(n) and O(1)
+void SortColor(vector<int> &nums){
+
+    int low = 0;
+    int mid = 0;
+    int high = nums.size()-1;
+
+    while(mid <= high){
+        if(nums[mid] == 0){
+            swap(nums[low],nums[mid]);
+            low++;
+            mid++;
+        } else if(nums[mid] == 1){
+            mid++;
+        } else{
+            swap(nums[high],nums[mid]);
+            high--;
+        }
+    }
+}
+
 
 int main(){
 
