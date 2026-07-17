@@ -8,7 +8,6 @@ bool isArmStrong(int n){
     while(n != 0){
         int dig = n % 10;
         sum += (dig * dig * dig);
-
         n /= 10;
     }
 
