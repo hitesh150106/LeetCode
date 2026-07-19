@@ -2,6 +2,8 @@
 #include <vector>
 using namespace std;
 
+// TC : O(log(m*n)) 
+// Q240 Approach Can Also be Used but , Most Optimal below -
 bool SearchInRow(vector<vector<int>> &matrix , int target , int row){
     int n = matrix[0].size();
     
