@@ -29,8 +29,10 @@ int maxActiveSectionsAfterTrade(string s){
 
     int maxPair = 0;
 
-    for(int i=0; i+1<zeroBlocks.size(); i++){
-        maxPair = max(maxPair , zeroBlocks[i] + zeroBlocks[i+1]);
+    if (!zeroBlocks.empty()){
+        for(int i=0; i+1<zeroBlocks.size(); i++){
+            maxPair = max(maxPair , zeroBlocks[i] + zeroBlocks[i+1]);
+        }
     }
 
     return countOne + maxPair;
