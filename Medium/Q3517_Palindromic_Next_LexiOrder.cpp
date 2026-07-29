@@ -12,12 +12,20 @@ string smallestLexiOrder(string s){
     for(int i=0; i<mid; i++){
         s[n-1-i] = s[i];
     }
+
+    int k = 2;
+
+    while(k >= 0){
+       smallestLexiOrder(s);
+       k--; 
+    }
+
     return s;
 }
 
 int main(){
 
-    string s = "daccad";
+    string s = "abba";
 
     cout << smallestLexiOrder(s);
 
