@@ -27,7 +27,6 @@ string MultiplyStrings(string num1 , string num2){
             ans.push_back(val + '0');
         }
     }
-
     return ans;
 }
 
