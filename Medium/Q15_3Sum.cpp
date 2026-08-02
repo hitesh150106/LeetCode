@@ -95,7 +95,6 @@ vector<vector<int>> threeSum3(vector<int>& nums) {
 }
 
 int main() {
-    // Sample test case for 3Sum
     vector<int> nums = {-1, 0, 1, 2, -1, -4};
 
     // 1. Brute Force
