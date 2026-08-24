@@ -7,7 +7,7 @@ int uniqueString(string s){
     unordered_map<char , int> m;
 
     for(int ch : s){
-        m[ch]++;;
+        m[ch]++;
     }
 
     for(int i=0; i<s.length(); i++){
