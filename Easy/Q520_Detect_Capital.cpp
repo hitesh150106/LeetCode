@@ -24,7 +24,6 @@ bool dectectCapital(string word){
     
     if(onlyFirstUpper == n-1 || nonUpperCount == n || upperCount == n) return true;
     else return false;
-
 }
 
 
