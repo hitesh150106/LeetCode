@@ -2,6 +2,10 @@
 #include <vector>
 using namespace std;
 
+
+// TC : O(n Log n)
+// worst case : O(n^2)
+
 int partition(vector<int> &arr , int st , int end){
 
     int idx = st-1;
@@ -34,7 +38,7 @@ int main(){
     vector<int> arr = { 4 , 5 , 1 , 9 , 2 , 3};
 
     quickSort(arr , 0 , arr.size()-1);
-    
+
     for(int val : arr){
         cout << val << " ";
     }
