@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+
 vector<int> parityArray(vector<int> &nums){
 
     int n = nums.size();
@@ -39,7 +40,6 @@ vector<int> parityArray2(vector<int> &nums2){
 }
 
 
-
 int main(){
 
     vector<int> nums = {3 , 1 , 5 , 2 , 8};
@@ -56,14 +56,12 @@ int main(){
 
 
     cout << "More Optimal : ";
-    
+
     parityArray2(nums2);
 
     for(int val : nums2){
         cout << val << " ";
     }
-
-    cout << endl;    
 
     return 0;
 }
