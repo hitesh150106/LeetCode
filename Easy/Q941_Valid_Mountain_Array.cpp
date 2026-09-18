@@ -3,8 +3,6 @@
 #include <climits>
 using namespace std;
 
-
-// Brute Force
 bool validMountain(vector<int> &arr){
 
     int n = arr.size();
@@ -36,12 +34,36 @@ bool validMountain(vector<int> &arr){
 }
 
 
+// More optimal
+bool validMountain2(vector<int> &arr){
+
+    int n = arr.size();
+    if(n < 3) return false;
+
+    int i = 0;
+
+    // Increasing part
+    while(i + 1 < n && arr[i] < arr[i+1]) i++;
+
+    // Peak cannot be first or last
+    if(i == 0 || i ==  n-1) return false;
+
+    // Decreasing part
+    while(i + 1 < n && arr[i] > arr[i+1]) i++;
+
+    return i == n-1;
+}
+
 
 int main(){
 
     vector<int> arr = {1 , 8 , 2 , 0};
 
-    cout << validMountain(arr);
+    cout << "Approach One : ";
+    cout << validMountain(arr) << endl;
+
+    cout << "More Optimal : ";
+    cout << validMountain2(arr) << endl;
 
     return 0;
 }
