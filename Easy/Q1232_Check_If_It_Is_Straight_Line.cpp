@@ -11,15 +11,14 @@ bool IsStraightLine(vector<vector<int>> &coordinates){
     int y2 = coordinates[1][1];
 
     for(int i=2; i<coordinates.size(); i++){
-
         int x = coordinates[i][0];
         int y = coordinates[i][1];
 
         if( (y-y1) / (x-x1) == (y2 - y1) / (x2 - x1)) return true;
     }
-
     return false;
 }
+
 
 int main(){
 
