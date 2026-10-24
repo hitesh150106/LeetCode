@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+
 int countOdds(int low, int high){
 
     int length = high - low + 1;
@@ -11,6 +12,7 @@ int countOdds(int low, int high){
 
     return length/2;
 }
+
 
 int main(){
 
