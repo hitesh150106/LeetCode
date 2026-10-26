@@ -15,18 +15,14 @@ int sumOfUnique(vector<int>& nums){
     for(auto& pair : m){
         int num = pair.first;
         int count = pair.second;
-        if(count == 1){
-            sum += num;
-        }
+        if(count == 1) sum += num;
     }
-
     return sum;
 }
 
 int main(){
 
     vector<int> nums = {1 , 2 , 3 , 2};
-
     cout << sumOfUnique(nums);
 
     return 0;
