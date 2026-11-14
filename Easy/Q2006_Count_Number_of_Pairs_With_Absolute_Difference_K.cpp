@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 
+
 int countKDifference(vector<int>& nums, int k){
 
     int count = 0;
@@ -16,6 +17,7 @@ int countKDifference(vector<int>& nums, int k){
 
     return count;
 }
+
 
 int main(){
 
